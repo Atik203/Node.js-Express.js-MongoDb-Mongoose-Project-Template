@@ -1,6 +1,6 @@
-## Level 2 Assignment 2 - Node.js Backend Application
+## Node.js-Express.js-MongoDb-Mongoose-Project-Template
 
-This is a Node.js backend application using Express.js, MongoDB, Mongoose, TypeScript, Zod, and Yarn.
+This is a backend template using Node.js, Express.js, MongoDB, Mongoose, TypeScript, Zod, and Yarn.
 
 ### Prerequisites
 
