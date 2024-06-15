@@ -14,11 +14,19 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
 Object.defineProperty(exports, "__esModule", { value: true });
 const cors_1 = __importDefault(require("cors"));
 const express_1 = __importDefault(require("express"));
+const globalErrorHandler_1 = require("./app/middleware/globalErrorHandler");
+const routeNotFound_1 = require("./app/middleware/routeNotFound");
+const routes_1 = __importDefault(require("./app/routes"));
 const app = (0, express_1.default)();
 app.use(express_1.default.json());
 app.use((0, cors_1.default)());
 // Routes
+app.use('/api/v1', routes_1.default);
 app.get('/', (req, res) => __awaiter(void 0, void 0, void 0, function* () {
     res.send('Server is running...');
 }));
+// 404 Route
+app.use('*', routeNotFound_1.routeNotFound);
+// Error Handler
+app.use(globalErrorHandler_1.globalErrorHandler);
 exports.default = app;
