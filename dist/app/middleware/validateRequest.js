@@ -16,6 +16,7 @@ const validateRequest = (schema) => {
             // if error, it will throw an exception
             yield schema.parseAsync({
                 body: req.body,
+                cookies: req.cookies,
             });
             next();
         }
