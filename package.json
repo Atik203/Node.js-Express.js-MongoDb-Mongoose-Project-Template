@@ -1,8 +1,9 @@
 {
-  "name": "first-project",
+  "name": "@atik203/node-express-ts-starter",
   "version": "1.0.0",
-  "description": "",
+  "description": "This is a boilerplate for Node.js, Express.js, and TypeScript.",
   "main": "index.js",
+  "bin": "./bin/cli.js",
   "scripts": {
     "start:prod": "node ./dist/server.js",
     "start:dev": "ts-node-dev --respawn --transpile-only src/server.ts",
@@ -13,10 +14,20 @@
     "prettier": "prettier --ignore-path .gitignore --write \"./src/**/*.+(js|ts|json)\"",
     "prettier:fix": "npx prettier --write src"
   },
-  "keywords": [],
-  "author": "",
+  "keywords": [
+    "node",
+    "express",
+    "typescript",
+    "boilerplate"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Atik203/Node.js-Express.js-MongoDb-Mongoose-Project-Template"
+  },
+  "author": "Atikur Rahaman",
   "license": "ISC",
   "dependencies": {
+    "child_process": "^1.0.2",
     "cloudinary": "^2.2.0",
     "cookie-parser": "^1.4.6",
     "cors": "^2.8.5",
