@@ -3,7 +3,9 @@
   "version": "1.0.0",
   "description": "This is a boilerplate for Node.js, Express.js, and TypeScript.",
   "main": "index.js",
-  "bin": "./bin/cli.js",
+  "bin": {
+    "node-express-ts-starter": "bin/cli.js"
+  },
   "scripts": {
     "start:prod": "node ./dist/server.js",
     "start:dev": "ts-node-dev --respawn --transpile-only src/server.ts",
@@ -22,7 +24,7 @@
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/Atik203/Node.js-Express.js-MongoDb-Mongoose-Project-Template"
+    "url": "git+https://github.com/Atik203/Node.js-Express.js-MongoDb-Mongoose-Project-Template.git"
   },
   "author": "Atikur Rahaman",
   "license": "ISC",
