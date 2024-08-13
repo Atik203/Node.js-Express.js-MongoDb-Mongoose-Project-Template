@@ -13,6 +13,14 @@ This is a backend template using Node.js, Express.js, MongoDB, Mongoose, TypeScr
 
 ### Installation
 
+**Install using npx**
+
+1. Create a new project using the template:
+
+```
+npx @atik203/node-express-ts-starter my-project
+```
+
 1. Clone the repository:
 
 ```
